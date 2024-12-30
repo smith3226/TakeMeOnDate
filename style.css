@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #f0e6d2; /* Softer beige for a more refined background */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: #ff66b2; /* Muted text for an elegant look */
+  }
+  
+  /* Headings */
+  h1 {
+    color: #ff66b2; /* Deep, rich tone for the heading */
+    font-size: 2.5rem; /* Larger, commanding size */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+  
+  /* Page Containers */
+  #landing-page,
+  #question-page,
+  #result-page {
+    height: 50%;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+
+  #result-page {
+   display: none;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+
+  #prev-button  , #next-button {
+    display: none;
+    background-color: #d53c77;
+  }
+  
+  
+  /* Buttons */
+  button {
+    background-color: #ff66b2; /* Sophisticated muted color */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    border: 2px solid #5e3b3b;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Subtle button shadow */
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff66b2; /* Darker shade for hover */
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+  }
+  
+  /* Options Container */
+  #options-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    margin: 20px;
+    gap: 15px; /* Spacing between buttons */
+  }
+  
+  /* Navigation Buttons */
+  .nav-button {
+    font-size: 16px;
+  }
+  
+  /* Button Move Effect */
+  .move-animation {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+  
+    button {
+      padding: 12px 25px; /* Reduce button size */
+      font-size: 16px; /* Slightly smaller text for buttons */
+    }
+  
+    #options-container {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+      align-items: center;
+    }
+  
+    #landing-page,
+    #question-page,
+    #result-page {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8rem; /* Further reduce heading size for very small screens */
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
